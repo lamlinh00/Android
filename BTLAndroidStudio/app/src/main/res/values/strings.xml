@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BTLAndroidStudio</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="login_to_continute">login to continute</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign up</string>
+    <string name="titlt_chat">Chat</string>
+    <string name="title_friend">Friend</string>
+    <string name="title_personal">Personal</string>
+</resources>

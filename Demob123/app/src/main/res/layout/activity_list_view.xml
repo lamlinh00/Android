@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".ListViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtString"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Dien ten chuong"
+            android:layout_marginEnd="5dp"/>
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+<!--RecyclerView duoc khuyen khich dung hien nay.
+listView se luu het dl trc do. RecyclerView thi chi luu 2 dl cu gan nhat de tiet kiem dl.
+trong RecyclerView dl co the dc tai sd lai nhieu lan. Nhieu d.thoai cu ko dung dc RecyclerView
+Chon ki trc khi lam nhe!
+-->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

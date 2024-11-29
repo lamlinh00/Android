@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Viet ten ban vao day"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName"
+        app:layout_constraintVertical_bias="0.05"
+        android:backgroundTint="@color/teal_200"
+        android:textAllCaps="false"
+
+        />
+    <!--
+    frameLayout: các đoi tuọng nằm chồng lên nhau. theo góc trên cùng bên trái. Layout đơn giản nhât. load lại nhanh nhất
+    LinearLayout: Các đối tượng xếp chồng lên nhau theo 1 hướng do mk quy định(bắt buộc phải đặt huóng ko là báo lỗi đấy). Thường hay được dùng.
+    RelativeLayout: Tóc độ load chậm hơn. sắp xếp các đối tượng dễ dàng hơn. (Thuộc tính .trái toStart trái toEnd phải).
+    ConstrainLayout: phải load bộ thư viện trươcs khi chạy. Nên dùng cho những layout phức tạp thì sẽ tối ưu hóa được thời gian load. Ràng buộc giữa các đ.tượng linh hoạt.
+        Nếu ràng buộc không chặt chẽ khi xuất nó có thể ko theo ý mk.
+        Ràng buộc tương đối, ràng buộc trung tâm, tràng buộc tròn,...xem slide.
+
+
+    adapter: bộ chuyển đổi.lấy dl từ tập dl và hiển thị lên giao diện màn hình.
+    ListView
+    RecyclerView
+
+
+    android:layout_weight:
+        Giá trị số cho biết tỷ lệ phân chia kích thước, trọng số để xác định tỉ lệ tương
+        ứng phần không gian còn trống dành cho đối tượng (view)
+        Giá trị có thể là 1,2,3,.. Mặc định là 0
+        Thiết lập android:layout_height = 0dp
+        • Ví dụ: nếu có 3 thành phần với layout_weight tương ứng là 1, 1 và 2 thì tỷ lệ tương ứng
+        là 25%, 25% và 50% của 3 thành phần so với chiều cao của cha.
+        chus ys tuy tung ban update maf 2 cos the to hon hay nho hon 1. thu thi moi biet dc.
+
+    Don vi do. dung cai nao cung duoc
+        • dp: density-independent pixels (scaled by device resol.)
+        • sp: scaled pixel (font size)
+        • px: pixels, in: inches, mm: milimeters.
+
+§ Tương tự cho thiết lập width!
+    -->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
